@@ -10,17 +10,16 @@ return {
   tilewidth = 40,
   tileheight = 40,
   nextlayerid = 8,
-  nextobjectid = 11,
+  nextobjectid = 12,
   properties = {
-    ["music"] = "deltarune/wind_highplace",
+    ["music"] = "os/OnLittleCatFeet",
     ["name"] = "Dark World - City View"
   },
   tilesets = {
     {
       name = "mainarea",
       firstgid = 1,
-      filename = "../tilesets/mainarea.tsx",
-      exportfilename = "../tilesets/mainarea.lua"
+      filename = "../../tilesets/mainarea.tsx"
     }
   },
   layers = {
@@ -55,7 +54,7 @@ return {
     },
     {
       type = "imagelayer",
-      image = "../../../assets/sprites/world/maps/cityscape_bg.png",
+      image = "../../../../assets/sprites/world/maps/cityscape_bg.png",
       id = 2,
       name = "bg",
       class = "",
@@ -71,7 +70,7 @@ return {
     },
     {
       type = "imagelayer",
-      image = "../../../assets/sprites/world/maps/cityscape_fg.png",
+      image = "../../../../assets/sprites/world/maps/cityscape_fg.png",
       id = 6,
       name = "bg_fg",
       class = "",
@@ -245,6 +244,19 @@ return {
           properties = {
             ["cutscene"] = "beginning.dead_end"
           }
+        },
+        {
+          id = 11,
+          name = "filter",
+          type = "",
+          shape = "point",
+          x = 40,
+          y = 0,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          visible = true,
+          properties = {}
         }
       }
     },
